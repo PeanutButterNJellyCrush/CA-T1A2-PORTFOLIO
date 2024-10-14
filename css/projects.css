@@ -56,7 +56,7 @@ nav{
 
 
 ul{
-    display:flex;d
+    display:flex;
     align-items: center;
     gap: 3em;
 }
@@ -81,6 +81,8 @@ nav ul a:hover{
     text-align: center;
     font-size: 6em;
     margin: 1em 0;
+    margin-top: 2em;
+
 }
  
 
@@ -89,6 +91,8 @@ nav ul a:hover{
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 3em;
 }
+
+
 .box{
     border: 3px dotted rgb(49,49,49);
     border-radius: 8px;
@@ -109,6 +113,7 @@ nav ul a:hover{
 }
 
 
+
 .footer { 
     position:fixed;
     left: 0;
@@ -119,12 +124,21 @@ nav ul a:hover{
     margin: 0;
     margin-bottom: 0;
     padding-bottom: 0;
+
     display: flex;
     align-items: center;
-    align-self: flex-end;
- 
+    justify-content: center;
+    gap: 35em;
 }
 
+.footer_copyright{
+    width:60px;
+    height:60px;
+
+}
+.social_icons a img{ 
+    width: 55px;
+}
 .footer_copyright{
     width:60px;
     height:60px;
@@ -136,28 +150,75 @@ nav ul a:hover{
 
 }
 
+.social_icons img{    
+    cursor: pointer;
+}
 
-  /*for tablet view*/
+.social_icons img:hover{
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2),-10px -10px 10px black;
+
+}
+
+  /* for tablet view*/
 @media screen and (min-width: 768px) and (max-device-width: 1024px) {
-    .button_large {
-        margin: 0;
-
-    }
-    .button {
-        grid-row:5;
-        grid-column: 3/ 5;
-        text-align: center;
-    }
+.projects_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
 }
 
+}
 
-/* For Mobile Portrait View */
-@media only screen and (max-device-width: 480px) 
-and (orientation: portrait) {
+@media only screen and (max-device-width: 768px) 
+and (orientation: portrait) { 
+.projects h1{
+    font-size: 4em;
+} 
+.projects_container{
+    width: 80vw;
+    margin-left: auto ;
+    margin-right: auto;
+} 
+.projects_container
+.box
+ h1{ 
+    font-size: 3em;
+}
+
+.nav{
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8em;
+}
+    
+.button_contact{
+    font-size: 1em;
+
+}
+}
+
+@media (max-width: 850px) {
+    .footer {
+        gap: 20em;
+    }
   }
-
-  /* For Mobile Landscape View */
-@media screen and (max-device-width: 640px) 
-and (orientation: landscape) {
-
+  
+@media (max-width: 565px) {
+    .footer {
+    gap: 18em;
 }
+
+@media (max-width: 475px) {
+    .footer{
+        gap: 5em;
+     }
+    }
+ }
