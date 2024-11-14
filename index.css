@@ -14,7 +14,6 @@
     --bg_color:#FCF8F3;
     --main_bg_color:#FFD3B6;
     --secondary_bg_color: #698474;
-    ;
     --main_bg_color_light: #e6a172 ;
 }
 
@@ -87,7 +86,6 @@ section{
 
 .home img{ 
     width: 21vw;
-    /* height: 45vh; */
     border-radius: 8px;
     margin-top: 50px;
 
